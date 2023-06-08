@@ -1,0 +1,65 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    background-color: #f7f7f7;
+}
+
+.container {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-content: center
+}
+
+.footer {
+    text-align:center
+}
+
+.list-container {
+    margin-top: 300px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.box {
+    padding: 15px;
+    border-radius: 8px;
+    border: solid #d3d1d1;
+    box-shadow: 0px 0px 3px 2px #ffffff;
+    min-width: 400px;
+    display: flex;
+    width: 30%;
+}
+
+.cityDetailsBlock {
+    width: 50%;
+}
+
+.cityDetailsBlock > * {
+    margin: 1px
+}
+
+.temperatureDetailsBlock {
+    width: 50%;
+    text-align: center;
+    border-left: 2px solid #cacaca;
+}
+
+.blue-back {
+    background-color: #6cb7e6;
+}
+
+.green-back {
+    background-color: #e0ff8f;
+}
+
+.orange-back {
+    background-color: #faca70;
+}
+
+.text-grey {
+    color: #a3a3a3;
+}

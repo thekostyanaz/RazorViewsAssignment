@@ -1,0 +1,16 @@
+﻿@model IEnumerable<CityWeather>
+
+@{
+	ViewBag.Title = $"Weather";
+}
+
+<div class="list-container">
+	@foreach (CityWeather cityWeather in Model)
+	{
+		<vc:city weather-in-city=cityWeather></vc:city>
+	}
+</div>
+
+@section heading{
+	<h1>Weather</h1>
+}

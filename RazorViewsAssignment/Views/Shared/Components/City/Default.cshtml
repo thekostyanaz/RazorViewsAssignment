@@ -1,0 +1,28 @@
+﻿@model CityWeather;
+
+@{
+	string GetColorClass(int? temperature)
+	{
+		if (temperature <= 44)
+		{
+			return "blue-back";
+		}
+		else if (temperature > 44 && temperature <= 74)
+		{
+			return "green-back";
+		}
+		return "orange-back";
+	}
+}
+
+<div class="box @GetColorClass(Model.TemperatureFahrenheit)">
+	<div class="cityDetailsBlock">
+		<h2>@Model.CityName</h2>
+		<h3>@Model.DateAndTime?.ToString("hh:mm tt", CultureInfo.InvariantCulture)</h3>
+		<a href="~/weather/@Model.CityUniqueCode">Details</a>
+	</div>
+
+	<div class="temperatureDetailsBlock">
+		<h2>@Model.TemperatureFahrenheit <sup class="text-grey">°F</sup></h2>
+	</div>
+</div>
